@@ -1,0 +1,439 @@
+<div class="row">
+    {{#each item}}
+        <div class="col-4">
+            <div class="card">
+                <img src="img_avatar.png" alt="Avatar">
+                <div class="container">
+                    <h4><b>{{name}} {{price}}{{pricetype}}</b></h4> 
+                    <p>{{description}}</p>
+                    <div>0</div><input name="" id="add" class="btn btn-primary" type="button" value="+">
+                    <input name="" id="sub" class="btn btn-primary" type="button" value="-">
+                </div>
+            </div>
+        </div>
+    {{/each}}
+</div>
+  {{!-- <table class="table">
+    <thead><div><th class="col-md-4">
+      </div>
+      </th>
+    <th class="col-md-8">
+      <h1 align="center" >MENU</h1></th></thead></table>
+<table class="table">
+  <thead>
+    <td class="col-md-4"></td>
+    <td class="col-md-8"><center><table width="1000" border="1" cellspacing="0"></center>
+<form name="myForm">
+  <tr height="150">
+     <td bgcolor="#FF8080"colspan="2"><center><font size="100">Welcome to my Store</font></center></td>
+  </tr>
+		<div rel="indian">
+  <tr height="100">
+     <td width="100"><center><img src="brook.jpg" width="150" heigth="150"></center></td>
+     <td bgcolor="#F5D69F">Item Name: Cold Coffee <br><br>
+     <br><br> Quantity:<input type="text" name="quantity1" id="quantity1" value="">
+         <input type="button" id="button1" value="   BUY   " onClick="javascript: Clickme1();">
+     Price:<input type="text" name="quantity1" id="total1" value=""></td>
+  </tr></div>
+      
+      <tr height="100">
+     <td width="100"><center><img src="brook.jpg" width="150" heigth="150"></center></td>
+     <td bgcolor="#F5D69F">Item Name: Tea <br><br>
+     <br><br> Quantity:<input type="text" name="quantity2" id="quantity2" value="">
+         <input type="button" id="button1" value="   BUY   " onClick="javascript: Clickme2();">
+     Price:<input type="text" name="quantity2" id="total2" value=""></td>
+  </tr>
+      
+      <tr height="100">
+     <td width="100"><center><img src="brook.jpg" width="150" heigth="150"></center></td>
+     <td bgcolor="#F5D69F">Item Name: Coffee <br><br>
+     <br><br> Quantity:<input type="text" name="quantity3" id="quantity3" value="">
+         <input type="button" id="button1" value="   BUY   " onClick="javascript: Clickme3();">
+     Price:<input type="text" name="quantity3" id="total3" value=""></td>
+  </tr>
+      
+      <tr height="100">
+     <td width="100"><center><img src="brook.jpg" width="150" heigth="150"></center></td>
+     <td bgcolor="#F5D69F">Item Name: Cold Drinks <br><br>
+     <br><br> Quantity:<input type="text" name="quantity4" id="quantity4" value="">
+         <input type="button" id="button1" value="   BUY   " onClick="javascript: Clickme4();">
+     Price:<input type="text" name="quantity4" id="total4" value=""></td>
+  </tr>
+      
+      <tr height="100">
+     <td width="100"><center><img src="brook.jpg" width="150" heigth="150"></center></td>
+     <td bgcolor="#F5D69F">Item Name: Virgin Mojito <br><br>
+     <br><br> Quantity:<input type="text" name="quantity5" id="quantity5" value="">
+         <input type="button" id="button1" value="   BUY   " onClick="javascript: Clickme5();">
+     Price:<input type="text" name="quantity5" id="total5" value=""></td>
+  </tr>
+      
+      <tr height="100">
+     <td width="100"><center><img src="brook.jpg" width="150" heigth="150"></center></td>
+     <td bgcolor="#F5D69F">Item Name: Kitkat Shake <br><br>
+     <br><br> Quantity:<input type="text" name="quantity6" id="quantity6" value="">
+         <input type="button" id="button1" value="   BUY   " onClick="javascript: Clickme6();">
+     Price:<input type="text" name="quantity6" id="total6" value=""></td>
+  </tr>
+      
+      <tr height="100">
+     <td width="100"><center><img src="brook.jpg" width="150" heigth="150"></center></td>
+     <td bgcolor="#F5D69F">Item Name: Blue Lagoon <br><br>
+     <br><br> Quantity:<input type="text" name="quantity7" id="quantity7" value="">
+         <input type="button" id="button1" value="   BUY   " onClick="javascript: Clickme7();">
+     Price:<input type="text" name="quantity7" id="total7" value=""></td>
+  </tr>
+      
+      <tr height="100">
+     <td width="100"><center><img src="brook.jpg" width="150" heigth="150"></center></td>
+     <td bgcolor="#F5D69F">Item Name: Iced Mocha <br><br>
+     <br><br> Quantity:<input type="text" name="quantity8" id="quantity8" value="">
+         <input type="button" id="button1" value="   BUY   " onClick="javascript: Clickme8();">
+     Price:<input type="text" name="quantity8" id="total8" value=""></td>
+  </tr>
+        
+        <tr height="100">
+     <td width="100"><center><img src="brook.jpg" width="150" heigth="150"></center></td>
+     <td bgcolor="#F5D69F">Item Name: White Bread <br><br>
+     <br><br> Quantity:<input type="text" name="quantity9" id="quantity9" value="">
+         <input type="button" id="button1" value="   BUY   " onClick="javascript: Clickme9();">
+     Price:<input type="text" name="quantity9" id="total9" value=""></td>
+  </tr>
+        
+        <tr height="100">
+     <td width="100"><center><img src="brook.jpg" width="150" heigth="150"></center></td>
+     <td bgcolor="#F5D69F">Item Name: Brown Bread <br><br>
+     <br><br> Quantity:<input type="text" name="quantity10" id="quantity10" value="">
+         <input type="button" id="button1" value="   BUY   " onClick="javascript: Clickme10();">
+     Price:<input type="text" name="quantity10" id="total10" value=""></td>
+  </tr>
+        
+        <tr height="100">
+     <td width="100"><center><img src="brook.jpg" width="150" heigth="150"></center></td>
+     <td bgcolor="#F5D69F">Item Name: Suji Rusk <br><br>
+     <br><br> Quantity:<input type="text" name="quantity11" id="quantity11" value="">
+         <input type="button" id="button1" value="   BUY   " onClick="javascript: Clickme11();">
+     Price:<input type="text" name="quantity11" id="total11" value=""></td>
+  </tr>
+        
+        <tr height="100">
+     <td width="100"><center><img src="brook.jpg" width="150" heigth="150"></center></td>
+     <td bgcolor="#F5D69F">Item Name: Jeera Rusk <br><br>
+     <br><br> Quantity:<input type="text" name="quantity12" id="quantity12" value="">
+         <input type="button" id="button1" value="   BUY   " onClick="javascript: Clickme12();">
+     Price:<input type="text" name="quantity12" id="total12" value=""></td>
+  </tr>
+        
+        <tr height="100">
+     <td width="100"><center><img src="brook.jpg" width="150" heigth="150"></center></td>
+     <td bgcolor="#F5D69F">Item Name: Burger Buns <br><br>
+     <br><br> Quantity:<input type="text" name="quantity13" id="quantity13" value="">
+         <input type="button" id="button1" value="   BUY   " onClick="javascript: Clickme13();">
+     Price:<input type="text" name="quantity13" id="total13" value=""></td>
+  </tr>
+        
+        <tr height="100">
+     <td width="100"><center><img src="brook.jpg" width="150" heigth="150"></center></td>
+     <td bgcolor="#F5D69F">Item Name: Pav Breads <br><br>
+     <br><br> Quantity:<input type="text" name="quantity14" id="quantity14" value="">
+         <input type="button" id="button1" value="   BUY   " onClick="javascript: Clickme14();">
+     Price:<input type="text" name="quantity14" id="total14" value=""></td>
+  </tr>
+        
+        <tr height="100">
+     <td width="100"><center><img src="brook.jpg" width="150" heigth="150"></center></td>
+     <td bgcolor="#F5D69F">Item Name: Pizza Base <br><br>
+     <br><br> Quantity:<input type="text" name="quantity15" id="quantity15" value="">
+         <input type="button" id="button1" value="   BUY   " onClick="javascript: Clickme15();">
+     Price:<input type="text" name="quantity15" id="total15" value=""></td>
+  </tr>
+        
+        <tr height="100">
+     <td width="100"><center><img src="brook.jpg" width="150" heigth="150"></center></td>
+     <td bgcolor="#F5D69F">Item Name: Chocolate Brownie <br><br>
+     <br><br> Quantity:<input type="text" name="quantity16" id="quantity16" value="">
+         <input type="button" id="button1" value="   BUY   " onClick="javascript: Clickme16();">
+     Price:<input type="text" name="quantity16" id="total16" value=""></td>
+  </tr>
+        
+        <tr height="100">
+     <td width="100"><center><img src="brook.jpg" width="150" heigth="150"></center></td>
+     <td bgcolor="#F5D69F">Item Name: Fruit Cake <br><br>
+     <br><br> Quantity:<input type="text" name="quantity17" id="quantity17" value="">
+         <input type="button" id="button1" value="   BUY   " onClick="javascript: Clickme17();">
+     Price:<input type="text" name="quantity17" id="total17" value=""></td>
+  </tr>
+        
+        <tr height="100">
+     <td width="100"><center><img src="brook.jpg" width="150" heigth="150"></center></td>
+     <td bgcolor="#F5D69F">Item Name: Chocolate Cake <br><br>
+     <br><br> Quantity:<input type="text" name="quantity18" id="quantity18" value="">
+         <input type="button" id="button1" value="   BUY   " onClick="javascript: Clickme18();">
+     Price:<input type="text" name="quantity18" id="total18" value=""></td>
+  </tr>
+        
+        <tr height="100">
+     <td width="100"><center><img src="brook.jpg" width="150" heigth="150"></center></td>
+     <td bgcolor="#F5D69F">Item Name: Marble Cake <br><br>
+     <br><br> Quantity:<input type="text" name="quantity19" id="quantity19" value="">
+         <input type="button" id="button1" value="   BUY   " onClick="javascript: Clickme19();">
+     Price:<input type="text" name="quantity19" id="total19" value=""></td>
+  </tr>
+        
+        <tr height="100">
+     <td width="100"><center><img src="brook.jpg" width="150" heigth="150"></center></td>
+     <td bgcolor="#F5D69F">Item Name: Vanilla Cake <br><br>
+     <br><br> Quantity:<input type="text" name="quantity20" id="quantity20" value="">
+         <input type="button" id="button1" value="   BUY   " onClick="javascript: Clickme20();">
+     Price:<input type="text" name="quantity20" id="total20" value=""></td>
+  </tr>
+        
+        <tr height="100">
+     <td width="100"><center><img src="brook.jpg" width="150" heigth="150"></center></td>
+     <td bgcolor="#F5D69F">Item Name: Strawberry Cake <br><br>
+     <br><br> Quantity:<input type="text" name="quantity21" id="quantity21" value="">
+         <input type="button" id="button1" value="   BUY   " onClick="javascript: Clickme21();">
+     Price:<input type="text" name="quantity21" id="total21" value=""></td>
+  </tr>
+        
+        <tr height="100">
+     <td width="100"><center><img src="brook.jpg" width="150" heigth="150"></center></td>
+     <td bgcolor="#F5D69F">Item Name: Muffins <br><br>
+     <br><br> Quantity:<input type="text" name="quantity22" id="quantity22" value="">
+         <input type="button" id="button1" value="   BUY   " onClick="javascript: Clickme22();">
+     Price:<input type="text" name="quantity22" id="total22" value=""></td>
+  </tr>
+      
+      <tr height="100">
+     <td width="100"><center><img src="brook.jpg" width="150" heigth="150"></center></td>
+     <td bgcolor="#F5D69F">Item Name: Atta Biscuit <br><br>
+     <br><br> Quantity:<input type="text" name="quantity23" id="quantity23" value="">
+         <input type="button" id="button1" value="   BUY   " onClick="javascript: Clickme23();">
+     Price:<input type="text" name="quantity23" id="total23" value=""></td>
+  </tr>
+      
+      <tr height="100">
+     <td width="100"><center><img src="brook.jpg" width="150" heigth="150"></center></td>
+     <td bgcolor="#F5D69F">Item Name: Cake Rusk <br><br>
+     <br><br> Quantity:<input type="text" name="quantity24" id="quantity24" value="">
+         <input type="button" id="button1" value="   BUY   " onClick="javascript: Clickme24();">
+     Price:<input type="text" name="quantity24" id="total24" value=""></td>
+  </tr>
+      
+      <tr height="100">
+     <td width="100"><center><img src="brook.jpg" width="150" heigth="150"></center></td>
+     <td bgcolor="#F5D69F">Item Name: Chocolate Cookies <br><br>
+     <br><br> Quantity:<input type="text" name="quantity25" id="quantity25" value="">
+         <input type="button" id="button1" value="   BUY   " onClick="javascript: Clickme25();">
+     Price:<input type="text" name="quantity25" id="total25" value=""></td>
+  </tr>
+      
+      <tr height="100">
+     <td width="100"><center><img src="brook.jpg" width="150" heigth="150"></center></td>
+     <td bgcolor="#F5D69F">Item Name: Coconut Macrons <br><br>
+     <br><br> Quantity:<input type="text" name="quantity26" id="quantity26" value="">
+         <input type="button" id="button1" value="   BUY   " onClick="javascript: Clickme26();">
+     Price:<input type="text" name="quantity26" id="total26" value=""></td>
+  </tr>
+      
+      <tr height="100">
+     <td width="100"><center><img src="brook.jpg" width="150" heigth="150"></center></td>
+     <td bgcolor="#F5D69F">Item Name: Kaju Pista Cookies <br><br>
+     <br><br> Quantity:<input type="text" name="quantity27" id="quantity27" value="">
+         <input type="button" id="button1" value="   BUY   " onClick="javascript: Clickme27();">
+     Price:<input type="text" name="quantity27" id="total27" value=""></td>
+  </tr>
+      
+      <tr height="100">
+     <td width="100"><center><img src="brook.jpg" width="150" heigth="150"></center></td>
+     <td bgcolor="#F5D69F">Item Name: Ajwain Cookies <br><br>
+     <br><br> Quantity:<input type="text" name="quantity28" id="quantity28" value="">
+         <input type="button" id="button1" value="   BUY   " onClick="javascript: Clickme28();">
+     Price:<input type="text" name="quantity28" id="total28" value=""></td>
+  </tr>
+      
+      <tr height="100">
+     <td width="100"><center><img src="brook.jpg" width="150" heigth="150"></center></td>
+     <td bgcolor="#F5D69F">Item Name: Almond Cookies <br><br>
+     <br><br> Quantity:<input type="text" name="quantity29" id="quantity29" value="">
+         <input type="button" id="button1" value="   BUY   " onClick="javascript: Clickme29();">
+     Price:<input type="text" name="quantity29" id="total29" value=""></td>
+  </tr>
+      
+      <tr height="100">
+     <td width="100"><center><img src="brook.jpg" width="150" heigth="150"></center></td>
+     <td bgcolor="#F5D69F">Item Name: Cheese Patty <br><br>
+     <br><br> Quantity:<input type="text" name="quantity30" id="quantity30" value="">
+         <input type="button" id="button1" value="   BUY   " onClick="javascript: Clickme30();">
+     Price:<input type="text" name="quantity30" id="total30" value=""></td>
+  </tr>
+      
+      <tr height="100">
+     <td width="100"><center><img src="brook.jpg" width="150" heigth="150"></center></td>
+     <td bgcolor="#F5D69F">Item Name: Paneer Patty <br><br>
+     <br><br> Quantity:<input type="text" name="quantity31" id="quantity31" value="">
+         <input type="button" id="button1" value="   BUY   " onClick="javascript: Clickme31();">
+     Price:<input type="text" name="quantity31" id="total31" value=""></td>
+  </tr>
+      
+      <tr height="100">
+     <td width="100"><center><img src="brook.jpg" width="150" heigth="150"></center></td>
+     <td bgcolor="#F5D69F">Item Name: Veg Grilled Sandwitch <br><br>
+     <br><br> Quantity:<input type="text" name="quantity32" id="quantity32" value="">
+         <input type="button" id="button1" value="   BUY   " onClick="javascript: Clickme32();">
+     Price:<input type="text" name="quantity32" id="total32" value=""></td>
+  </tr>
+      
+      <tr height="100">
+     <td width="100"><center><img src="brook.jpg" width="150" heigth="150"></center></td>
+     <td bgcolor="#F5D69F">Item Name: Italian Potato <br><br>
+     <br><br> Quantity:<input type="text" name="quantity33" id="quantity33" value="">
+         <input type="button" id="button1" value="   BUY   " onClick="javascript: Clickme33();">
+     Price:<input type="text" name="quantity33" id="total33" value=""></td>
+  </tr>
+      
+      <tr height="100">
+     <td width="100"><center><img src="brook.jpg" width="150" heigth="150"></center></td>
+     <td bgcolor="#F5D69F">Item Name: Cream Roll <br><br>
+     <br><br> Quantity:<input type="text" name="quantity34" id="quantity34" value="">
+         <input type="button" id="button1" value="   BUY   " onClick="javascript: Clickme34();">
+     Price:<input type="text" name="quantity34" id="total34" value=""></td>
+  </tr>
+      
+      <tr height="100">
+     <td width="100"><center><img src="brook.jpg" width="150" heigth="150"></center></td>
+     <td bgcolor="#F5D69F">Item Name: Veg Roll <br><br>
+     <br><br> Quantity:<input type="text" name="quantity35" id="quantity35" value="">
+         <input type="button" id="button1" value="   BUY   " onClick="javascript: Clickme35();">
+     Price:<input type="text" name="quantity35" id="total35" value=""></td>
+  </tr>
+      
+      <tr height="100">
+     <td width="100"><center><img src="brook.jpg" width="150" heigth="150"></center></td>
+     <td bgcolor="#F5D69F">Item Name: Veg Burger <br><br>
+     <br><br> Quantity:<input type="text" name="quantity36" id="quantity36" value="">
+         <input type="button" id="button1" value="   BUY   " onClick="javascript: Clickme36();">
+     Price:<input type="text" name="quantity36" id="total36" value=""></td>
+  </tr>
+      
+      <tr height="100">
+     <td width="100"><center><img src="brook.jpg" width="150" heigth="150"></center></td>
+     <td bgcolor="#F5D69F">Item Name: Cheese Burger <br><br>
+     <br><br> Quantity:<input type="text" name="quantity37" id="quantity37" value="">
+         <input type="button" id="button1" value="   BUY   " onClick="javascript: Clickme37();">
+     Price:<input type="text" name="quantity37" id="total37" value=""></td>
+  </tr>
+      
+      <tr height="100">
+     <td width="100"><center><img src="brook.jpg" width="150" heigth="150"></center></td>
+     <td bgcolor="#F5D69F">Item Name: Farm House Pizza <br><br>
+     <br><br> Quantity:<input type="text" name="quantity38" id="quantity38" value="">
+         <input type="button" id="button1" value="   BUY   " onClick="javascript: Clickme38();">
+     Price:<input type="text" name="quantity38" id="total38" value=""></td>
+  </tr>
+      
+      <tr height="100">
+     <td width="100"><center><img src="brook.jpg" width="150" heigth="150"></center></td>
+     <td bgcolor="#F5D69F">Item Name: Paneer Tikka Pizza <br><br>
+     <br><br> Quantity:<input type="text" name="quantity39" id="quantity39" value="">
+         <input type="button" id="button1" value="   BUY   " onClick="javascript: Clickme39();">
+     Price:<input type="text" name="quantity39" id="total39" value=""></td>
+  </tr>
+      
+      <tr height="100">
+     <td width="100"><center><img src="brook.jpg" width="150" heigth="150"></center></td>
+     <td bgcolor="#F5D69F">Item Name: Richie Rich Special Pizza <br><br>
+     <br><br> Quantity:<input type="text" name="quantity40" id="quantity40" value="">
+         <input type="button" id="button1" value="   BUY   " onClick="javascript: Clickme40();">
+     Price:<input type="text" name="quantity40" id="total40" value=""></td>
+  </tr>
+      
+      <tr height="100">
+     <td width="100"><center><img src="brook.jpg" width="150" heigth="150"></center></td>
+     <td bgcolor="#F5D69F">Item Name: Spicy Veg Wrap <br><br>
+     <br><br> Quantity:<input type="text" name="quantity41" id="quantity41" value="">
+         <input type="button" id="button1" value="   BUY   " onClick="javascript: Clickme41();">
+     Price:<input type="text" name="quantity41" id="total41" value=""></td>
+  </tr>
+      
+      <tr height="100">
+     <td width="100"><center><img src="brook.jpg" width="150" heigth="150"></center></td>
+     <td bgcolor="#F5D69F">Item Name: Black Forest Cake <br><br>
+     <br><br> Quantity:<input type="text" name="quantity42" id="quantity42" value="">
+         <input type="button" id="button1" value="   BUY   " onClick="javascript: Clickme42();">
+     Price:<input type="text" name="quantity42" id="total42" value=""></td>
+  </tr>
+      
+      <tr height="100">
+     <td width="100"><center><img src="brook.jpg" width="150" heigth="150"></center></td>
+     <td bgcolor="#F5D69F">Item Name: Pineapple Cake <br><br>
+     <br><br> Quantity:<input type="text" name="quantity43" id="quantity43" value="">
+         <input type="button" id="button1" value="   BUY   " onClick="javascript: Clickme43();">
+     Price:<input type="text" name="quantity43" id="total43" value=""></td>
+  </tr>
+      
+      <tr height="100">
+     <td width="100"><center><img src="brook.jpg" width="150" heigth="150"></center></td>
+     <td bgcolor="#F5D69F">Item Name: Red Velvet Cake <br><br>
+     <br><br> Quantity:<input type="text" name="quantity44" id="quantity44" value="">
+         <input type="button" id="button1" value="   BUY   " onClick="javascript: Clickme44();">
+     Price:<input type="text" name="quantity44" id="total44" value=""></td>
+  </tr>
+      
+      <tr height="100">
+     <td width="100"><center><img src="brook.jpg" width="150" heigth="150"></center></td>
+     <td bgcolor="#F5D69F">Item Name: Strawberry Cake <br><br>
+     <br><br> Quantity:<input type="text" name="quantity45" id="quantity45" value="">
+         <input type="button" id="button1" value="   BUY   " onClick="javascript: Clickme45();">
+     Price:<input type="text" name="quantity45" id="total45" value=""></td>
+  </tr>
+      
+      <tr height="100">
+     <td width="100"><center><img src="brook.jpg" width="150" heigth="150"></center></td>
+     <td bgcolor="#F5D69F">Item Name: Chocotruffle Pastry <br><br>
+     <br><br> Quantity:<input type="text" name="quantity46" id="quantity46" value="">
+         <input type="button" id="button1" value="   BUY   " onClick="javascript: Clickme46();">
+     Price:<input type="text" name="quantity46" id="total46" value=""></td>
+  </tr>
+      
+      <tr height="100">
+     <td width="100"><center><img src="brook.jpg" width="150" heigth="150"></center></td>
+     <td bgcolor="#F5D69F">Item Name: Pineapple Pastry <br><br>
+     <br><br> Quantity:<input type="text" name="quantity47" id="quantity47" value="">
+         <input type="button" id="button1" value="   BUY   " onClick="javascript: Clickme47();">
+     Price:<input type="text" name="quantity47" id="total47" value=""></td>
+  </tr>
+      
+      <tr height="100">
+     <td width="100"><center><img src="brook.jpg" width="150" heigth="150"></center></td>
+     <td bgcolor="#F5D69F">Item Name: Fresh Fruit Pastry <br><br>
+     <br><br> Quantity:<input type="text" name="quantity48" id="quantity48" value="">
+         <input type="button" id="button1" value="   BUY   " onClick="javascript: Clickme48();">
+     Price:<input type="text" name="quantity48" id="total48" value=""></td>
+  </tr>
+      
+      <tr height="100">
+     <td width="100"><center><img src="brook.jpg" width="150" heigth="150"></center></td>
+     <td bgcolor="#F5D69F">Item Name: Mango Pudding <br><br>
+     <br><br> Quantity:<input type="text" name="quantity49" id="quantity49" value="">
+         <input type="button" id="button1" value="   BUY   " onClick="javascript: Clickme49();">
+     Price:<input type="text" name="quantity49" id="total49" value=""></td>
+  </tr>
+      
+      <tr height="100">
+     <td width="100"><center><img src="brook.jpg" width="150" heigth="150"></center></td>
+     <td bgcolor="#F5D69F">Item Name: Chocolate Pudding <br><br>
+     <br><br> Quantity:<input type="text" name="quantity50" id="quantity50" value="">
+         <input type="button" id="button1" value="   BUY   " onClick="javascript: Clickme50();">
+     Price:<input type="text" name="quantity50" id="total50" value=""></td>
+  </tr>
+      
+    <tr>
+    <td colspan="2" height="50" bgcolor="#CCFFB2">TOTALBILL:<input type="text" name="total" id="totalbill" value="" size="25"></td>
+  </tr>
+
+</form>
+</table>
+    </td>
+    </thead>
+   --}}

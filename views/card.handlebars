@@ -1,0 +1,11 @@
+{{#each item}}
+    <div class="card">
+        <img src="img_avatar.png" alt="Avatar" style="width:100%">
+        <div class="container">
+            <h4><b>{{item-name}} {{price}}{{price type}}</b></h4> 
+            <p>{{description}}</p>
+            <div>0</div><input name="" id="add" class="btn btn-primary" type="button" value="+">
+            <input name="" id="sub" class="btn btn-primary" type="button" value="-">
+        </div>
+    </div>
+{{/each}}
